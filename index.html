@@ -16,10 +16,14 @@
       name: 'FreeCloud-doc',
       repo: 'https://github.com/git9527/freecloud-doc',
       loadSidebar: true,  // 使用 _sidebar.md 文件
-      subMaxLevel: 3,
+      subMaxLevel: 2,
+      routerMode: 'history',
       relativePath: true, // 使用相对路径引用
       markdown: {
         breaks: true,
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
       },
       search: 'auto'
     }

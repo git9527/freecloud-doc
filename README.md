@@ -1,9 +1,10 @@
 # FreeCloud
 
-> 这是一套基于uniCloud的**免费**,**高速**,**无限容量**的网盘程序
+> 这是一套基于uniCloud的 **免费**，**高速**，**无限容量** 的网盘程序
 
-管理端项目地址：https://github.com/git9527/freecloud-admin  
-浏览者项目地址：https://github.com/git9527/freecloud-viewer
+- 详细文档地址: https://git9527.gitee.io/freecloud-doc
+- 管理端项目地址：https://github.com/git9527/freecloud-admin
+- 浏览者项目地址：https://github.com/git9527/freecloud-viewer
 
 <br>
 <br>
