@@ -8,6 +8,49 @@
     ```
     /Users/zhangsn/.nvm/versions/node/v10.23.0/bin/node
     ```
-- 打开 `HBuilderX`，依次展开【偏好设置】-> 【运行配置】-> 【npm路径】及【node路径】，将上一步获得的路径填入其中
-  ![hbuilder-settings](../../static/image/hbuilder-node.png)
-## 检出代码
+- 打开 `HBuilderX`，依次展开【偏好设置】->【运行配置】->【npm路径】及【node路径】，将上一步获得的路径填入其中
+  ![image![img_1.png](img_1.png)](../../static/image/hbuilder/node-settings.png)
+
+## 导入项目
+- 检出代码
+  ```bash
+  git clone https://github.com/git9527/freecloud-admin
+  ```
+- 进入项目文件夹并安装依赖
+  ```bash
+  cd freecloud-admin
+  npm install
+  ```
+- 打开`HbuilderX`并导入本地项目
+  ![image](../../static/image/hbuilder/import-project.png)
+## 设置云空间
+- 在云函数目录`cloudfunctions`右键菜单【创建云服务空间】
+  ![image](../../static/image/hbuilder/create-cloud-space.png)
+- 在浏览器自动弹出的web控制台 https://unicloud.dcloud.net.cn 中，选择【阿里云】作为服务商，输入`freecloud-admin`确认创建  
+  
+  !> 如果未进行实名认证，会跳转至实名认证页面进行实名认证，等待实名认证审核之后可以开通服务空间
+  
+  ![image](../../static/image/hbuilder/aliyun-space.png)
+- 在web控制台中进入刚创建的云空间，添加新的安全域名`localhost:20000`
+  ![image](../../static/image/hbuilder/safe-domain.png)
+- 回到`HBuilderX`在云函数目录`cloudfunctions`右键选择【关联云服务空间】，再选择刚创建的【freecloud-admin】
+  ![image](../../static/image/hbuilder/link-space.png)
+- 在云函数目录`cloudfunctions`右键选择【上传所有云函数、公共模块及actions】
+  ![image](../../static/image/hbuilder/upload-funs.png)
+  
+  ![image](../../static/image/hbuilder/upload-funs-result.png)
+- 展开`cloudfunctions`文件夹，在`db_init.json`文件上右键选择【初始化云数据库】
+  ![image](../../static/image/hbuilder/init-database.png)
+  
+  ![image](../../static/image/hbuilder/init-database-result.png)
+## 本地运行
+- 从`HbuilderX`顶部工具栏选择【运行至浏览器】->【Chrome】(其他浏览器也行)
+  ![image](../../static/image/local-dev/run-to-chrome.png)
+  
+  ![image](../../static/image/local-dev/compile.png)
+- 在打开的浏览器中输入用户名/密码
+  - 初始超级管理员`admin`/`admin123`
+  - 初始子站点管理员`test`/`test123`
+  ![image](../../static/image/local-dev/login.png)
+
+  

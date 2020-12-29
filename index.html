@@ -7,7 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">-->
-  <link rel="stylesheet" href="./static/docsify4/vue.css">
+  <link rel="stylesheet" href="./static/docsify4/style/vue.css">
 </head>
 <body>
   <div id="app">加载中</div>
@@ -25,11 +25,28 @@
       alias: {
         '/.*/_sidebar.md': '_sidebar.md'
       },
-      search: 'auto'
+      search: 'auto',
+      copyCode: {
+        buttonText: {
+          '/zh-cn/': '点击复制',
+          '/'      : 'Copy to clipboard'
+        },
+        errorText: {
+          '/zh-cn/': '错误',
+          '/'      : 'Error'
+        },
+        successText: {
+          '/zh-cn/': '复制成功',
+          '/'      : 'Copied'
+        }
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <!--  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>-->
   <script src="./static/docsify4/docsify.min.js"></script>
+  <script src="./static/docsify4/vendor/zoom-image.min.js"></script>
+  <script src="./static/docsify4/vendor/copy-code.min.js"></script>
+  <script src="./static/docsify4/vendor/prism-bash.min.js"></script>
 </body>
 </html>
