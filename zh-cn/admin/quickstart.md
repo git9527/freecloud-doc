@@ -1,4 +1,4 @@
-## 软件安装及环境配置
+### 软件安装及环境配置
 - 截止目前(2020-12-28)，`HBuilderX` 官网最新的正式版为`v2.9.8`，MacOS版下载地址为 https://download1.dcloud.net.cn/download/HBuilderX.2.9.8.20201119.full.dmg ， 其他平台的及版本请去官网 https://www.dcloud.io/hbuilderx.html 下载
 - 强烈推荐使用 [nvm](https://github.com/nvm-sh/nvm) 管理本地的NodeJs版本
 
@@ -9,9 +9,9 @@
     /Users/zhangsn/.nvm/versions/node/v10.23.0/bin/node
     ```
 - 打开 `HBuilderX`，依次展开【偏好设置】->【运行配置】->【npm路径】及【node路径】，将上一步获得的路径填入其中
-  ![image![img_1.png](img_1.png)](../../static/image/hbuilder/node-settings.png)
+  ![image](../../static/image/hbuilder/node-settings.png)
 
-## 导入项目
+### 导入项目
 - 检出代码
   ```bash
   git clone https://github.com/git9527/freecloud-admin
@@ -23,7 +23,7 @@
   ```
 - 打开`HbuilderX`并导入本地项目
   ![image](../../static/image/hbuilder/import-project.png)
-## 设置云空间
+### 设置云空间
 - 在云函数目录`cloudfunctions`右键菜单【创建云服务空间】
   ![image](../../static/image/hbuilder/create-cloud-space.png)
 - 在浏览器自动弹出的web控制台 https://unicloud.dcloud.net.cn 中，选择【阿里云】作为服务商，输入`freecloud-admin`确认创建  
@@ -43,7 +43,7 @@
   ![image](../../static/image/hbuilder/init-database.png)
   
   ![image](../../static/image/hbuilder/init-database-result.png)
-## 本地运行
+### 本地运行
 - 从`HbuilderX`顶部工具栏选择【运行至浏览器】->【Chrome】(其他浏览器也行)
   ![image](../../static/image/local-dev/run-to-chrome.png)
   
