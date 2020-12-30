@@ -28,7 +28,7 @@
   ![image](../../static/image/admin-instruction/site-list.png)
 - 站点编辑
   ![image](../../static/image/admin-instruction/site-edit.png)
-- 根目录ID来源 (打开uniCloud Web控制台，选择【freecloud-admin】服务空间，进入【云数据库】-> 【opendb-netdisk-files】选择合适记录的_id字段)
+- `根目录ID`来源 (打开uniCloud Web控制台，选择`freecloud-admin`服务空间，进入【云数据库】-> 【opendb-netdisk-files】选择合适记录的`_id`字段)
   ![image](../../static/image/admin-instruction/site-root-id.png)
 
 ## 网盘管理
